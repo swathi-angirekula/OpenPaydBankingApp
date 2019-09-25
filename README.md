@@ -58,3 +58,6 @@ Refer console for port details
 ## To Test: 
 
 This Application is updated with Unit tests which tests multiple scenarios. 
+
+## Lombok for Eclipse 
+This application is using Lombok library for the model classes. The same might show errors in eclipse. Make sure tha tlobok is properly configured in eclipse.
