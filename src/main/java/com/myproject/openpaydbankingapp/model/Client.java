@@ -25,14 +25,6 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Client extends AuditModel {
 
-//	public Client(Long id, String name, String surname, Address primaryAddress, Address secondaryAddress) {
-//		this.id = id;
-//		this.name = name;
-//		this.surname = surname;
-//		this.primaryAddress = primaryAddress;
-//		this.secondaryAddress = secondaryAddress;
-//	}
-
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -59,70 +51,4 @@ public class Client extends AuditModel {
 		return getName() + getSurname() + getPrimaryAddress() + getSecondaryAddress();
 	}
 
-//	/**
-//	 * @return
-//	 */
-//	public Long getId() {
-//		return id;
-//	}
-//
-////	public void setId(Long id) {
-////		this.id = id;
-////	}
-//	/**
-//	 * @return
-//	 */
-//	public String getName() {
-//		return name;
-//	}
-//
-//	/**
-//	 * @param name
-//	 */
-//	public void setName(String name) {
-//		this.name = name;
-//	}
-//
-//	/**
-//	 * @return
-//	 */
-//	public String getSurname() {
-//		return surname;
-//	}
-//
-//	/**
-//	 * @param surname
-//	 */
-//	public void setSurname(String surname) {
-//		this.surname = surname;
-//	}
-//
-//	/**
-//	 * @return
-//	 */
-//	public Address getPrimaryAddress() {
-//		return primaryAddress;
-//	}
-//
-//	/**
-//	 * @param primaryAddress
-//	 */
-//	public void setPrimaryAddress(Address primaryAddress) {
-//		this.primaryAddress = primaryAddress;
-//	}
-//
-//	/**
-//	 * @return
-//	 */
-//	public Address getSecondaryAddress() {
-//		return secondaryAddress;
-//	}
-//
-//	/**
-//	 * @param secondaryAddress
-//	 */
-//	public void setSecondaryAddress(Address secondaryAddress) {
-//		this.secondaryAddress = secondaryAddress;
-//	}
-//
 }
