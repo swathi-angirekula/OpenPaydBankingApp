@@ -61,3 +61,4 @@ This Application is updated with Unit tests which tests multiple scenarios.
 
 ## Lombok for Eclipse 
 This application is using Lombok library for the model classes. The same might show errors in eclipse. Make sure tha tlobok is properly configured in eclipse.
+Refer https://www.journaldev.com/18124/java-project-lombok
