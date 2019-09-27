@@ -59,6 +59,45 @@ Refer console for port details
 
 This Application is updated with Unit tests which tests multiple scenarios. 
 
+## Create Request example :
+
+### Create Account Request : 
+
+{
+  "accountType": "CURRENT",
+  "balance": 0
+}
+
+Balance Type is automatically assumed as Credit for new accounts. 
+
+### Create Client Request : 
+
+    {
+        "name": "",
+        "surname": "",
+        "primaryAddress": {
+            "addressLine1": "",
+            "addressLine2": "",
+            "city": "",
+            "country": ""
+        },
+        "secondaryAddress": {
+            "addressLine1": "",
+            "addressLine2": "",
+            "city": "",
+            "country": ""
+        }
+    }
+	
+###   Create Transaction Request : 
+
+{
+  "amount": 0,
+  "creditAccountId": 0,
+  "debitAccountId": 0,
+  "message": "string"
+}
+
 ## Lombok for Eclipse 
 This application is using Lombok library for the model classes. The same might show errors in eclipse. Make sure tha tlobok is properly configured in eclipse.
 Refer https://www.journaldev.com/18124/java-project-lombok
