@@ -99,5 +99,24 @@ Balance Type is automatically assumed as Credit for new accounts.
 }
 
 ## Lombok for Eclipse 
-This application is using Lombok library for the model classes. The same might show errors in eclipse. Make sure tha tlobok is properly configured in eclipse.
+This application is using Lombok library for the model classes. The same might show errors in eclipse. Make sure that lombok is properly configured in eclipse.
 Refer https://www.journaldev.com/18124/java-project-lombok
+
+
+## Prerequisite - DB configured
+
+The application connects to Postgres DB running at localshost with port 5432. 
+Username and password as shown below. 
+Please update the sr/main/resources/application.properties as per the postgres configured in your environment to stary the application.
+
+### Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+spring.datasource.username= postgres
+spring.datasource.password= postgres
+
+# The SQL dialect makes Hibernate generate better SQL for the chosen database
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+
+# Hibernate ddl auto (create, create-drop, validate, update)
+spring.jpa.hibernate.ddl-auto = update
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
